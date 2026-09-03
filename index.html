@@ -7,6 +7,7 @@
 <title>C.BANGVMOD - KHO MOD SKIN VÀ ADDON</title>
 
 <style>
+
 *{
     box-sizing:border-box;
     margin:0;
@@ -15,13 +16,14 @@
 
 body{
     font-family:Arial,Helvetica,sans-serif;
+    color:#fff;
     background:
-        radial-gradient(circle at top,#16213e,#05070c 65%);
-    color:white;
+        radial-gradient(circle at top,#17284a 0%,#070a12 48%,#03050a 100%);
     min-height:100vh;
 }
 
-button,input{
+button,
+input{
     font-family:inherit;
 }
 
@@ -29,7 +31,10 @@ button{
     cursor:pointer;
 }
 
-/* ================= KEY SCREEN ================= */
+
+/* =====================================================
+   KEY SCREEN
+===================================================== */
 
 #keyScreen{
     position:fixed;
@@ -40,35 +45,38 @@ button{
     align-items:center;
     justify-content:center;
 
-    padding:20px;
+    padding:18px;
 
     background:
-        radial-gradient(circle at center,#17284a,#03050a 70%);
+        radial-gradient(
+            circle at center,
+            #16294d 0%,
+            #060912 60%,
+            #020307 100%
+        );
 }
 
 .keyBox{
     width:100%;
     max-width:430px;
 
-    padding:28px;
+    padding:28px 22px;
 
-    background:rgba(12,17,30,.97);
+    background:rgba(10,15,27,.97);
 
-    border:1px solid #2b3852;
+    border:1px solid #293852;
 
     border-radius:24px;
 
     box-shadow:
-        0 20px 80px rgba(0,0,0,.7);
+        0 20px 80px rgba(0,0,0,.75);
 }
 
 .keyLogo{
     text-align:center;
 
-    font-size:31px;
+    font-size:30px;
     font-weight:900;
-
-    margin-bottom:7px;
 }
 
 .keyLogo span{
@@ -81,53 +89,55 @@ button{
     font-size:21px;
     font-weight:900;
 
-    margin-top:18px;
-    margin-bottom:8px;
+    margin-top:20px;
 }
 
-.keyDesc{
+.keyDescription{
     text-align:center;
 
-    color:#8995aa;
+    color:#8b97aa;
 
     line-height:1.5;
 
+    font-size:14px;
+
+    margin-top:8px;
     margin-bottom:20px;
 }
 
-.keyInput{
+#keyInput{
     width:100%;
 
     padding:15px;
 
     border-radius:13px;
 
-    border:1px solid #34415c;
+    border:1px solid #34415b;
 
     background:#070b14;
 
-    color:white;
+    color:#fff;
 
     outline:none;
 
-    font-size:15px;
-
     text-align:center;
+
+    font-size:15px;
 }
 
-.keyInput:focus{
+#keyInput:focus{
     border-color:#00eaff;
 
     box-shadow:
         0 0 0 2px rgba(0,234,255,.12);
 }
 
-.keyButton{
+#keyButton{
     width:100%;
 
-    margin-top:12px;
-
     padding:15px;
+
+    margin-top:12px;
 
     border:0;
 
@@ -138,38 +148,42 @@ button{
 
     color:#001018;
 
-    font-size:15px;
-
     font-weight:900;
+
+    font-size:14px;
 }
 
-.keyButton:disabled{
+#keyButton:disabled{
     opacity:.6;
+    cursor:not-allowed;
 }
 
 #keyMessage{
     min-height:22px;
 
-    margin-top:13px;
-
     text-align:center;
 
-    font-size:14px;
+    margin-top:13px;
+
+    font-size:13px;
 
     font-weight:bold;
 }
 
 .keyNote{
-    margin-top:18px;
-
     text-align:center;
 
-    color:#66738b;
+    margin-top:17px;
 
-    font-size:12px;
+    color:#5f6d83;
+
+    font-size:11px;
 }
 
-/* ================= MAIN ================= */
+
+/* =====================================================
+   MAIN
+===================================================== */
 
 #mainWebsite{
     display:none;
@@ -181,15 +195,18 @@ button{
 
     margin:auto;
 
-    padding:15px;
+    padding:12px;
 }
 
-/* ================= HEADER ================= */
+
+/* =====================================================
+   HEADER
+===================================================== */
 
 .header{
-    background:rgba(12,17,30,.9);
+    background:rgba(12,18,31,.92);
 
-    border:1px solid #29354d;
+    border:1px solid #29364d;
 
     border-radius:20px;
 
@@ -197,7 +214,7 @@ button{
 
     text-align:center;
 
-    margin-bottom:15px;
+    margin-bottom:14px;
 }
 
 .logo{
@@ -210,84 +227,92 @@ button{
 }
 
 .subtitle{
-    color:#8b97aa;
+    color:#8995a9;
+
     margin-top:7px;
-    font-size:14px;
+
+    font-size:13px;
 }
 
 .headerButtons{
-    display:flex;
-    justify-content:center;
-    gap:10px;
-    margin-top:16px;
+    margin-top:15px;
 }
 
-.smallButton{
-    padding:10px 14px;
-
-    border:1px solid #303c54;
+.logoutButton{
+    border:1px solid #3b465c;
 
     border-radius:10px;
 
     background:#121a2a;
 
-    color:white;
+    color:#fff;
+
+    padding:10px 14px;
 
     font-weight:bold;
 }
 
-/* ================= SEARCH ================= */
+
+/* =====================================================
+   SEARCH
+===================================================== */
 
 .searchBox{
-    margin-bottom:15px;
+    margin-bottom:14px;
 }
 
 .searchInput{
     width:100%;
 
-    padding:14px 16px;
+    padding:14px;
 
     border-radius:13px;
 
-    border:1px solid #303c54;
+    border:1px solid #303d55;
 
     background:#0c1220;
 
-    color:white;
+    color:#fff;
 
     outline:none;
-
-    font-size:15px;
 }
 
 .searchInput:focus{
     border-color:#00eaff;
 }
 
-/* ================= NOTICE ================= */
+
+/* =====================================================
+   NOTICE
+===================================================== */
 
 .notice{
-    background:
-        linear-gradient(
-            135deg,
-            rgba(0,234,255,.12),
-            rgba(0,119,255,.08)
-        );
+    padding:15px;
 
-    border:1px solid rgba(0,234,255,.25);
+    margin-bottom:15px;
 
     border-radius:16px;
 
-    padding:15px;
+    border:1px solid rgba(0,234,255,.22);
 
-    margin-bottom:17px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(0,234,255,.10),
+            rgba(0,119,255,.07)
+        );
 
-    line-height:1.5;
+    color:#dbe4f5;
 
-    font-size:14px;
+    font-size:13px;
+
+    line-height:1.55;
 }
 
-/* ================= MOD GRID ================= */
+
+/* =====================================================
+   MOD GRID
+===================================================== */
 
 .modGrid{
     display:grid;
@@ -298,14 +323,19 @@ button{
     gap:12px;
 }
 
+
+/* =====================================================
+   MOD CARD
+===================================================== */
+
 .modCard{
     overflow:hidden;
 
+    border-radius:17px;
+
     background:#0d1422;
 
-    border:1px solid #29354c;
-
-    border-radius:17px;
+    border:1px solid #29364d;
 
     transition:.2s;
 }
@@ -325,39 +355,39 @@ button{
 
     display:block;
 
-    background:#151c2b;
+    background:#151d2d;
 }
 
 .modBody{
-    padding:13px;
+    padding:12px;
 }
 
 .modName{
-    font-size:16px;
+    font-size:15px;
 
     font-weight:900;
 
     line-height:1.3;
 
-    margin-bottom:7px;
+    margin-bottom:6px;
 }
 
 .modDesc{
-    color:#8995aa;
+    color:#8b97aa;
 
-    font-size:12px;
+    font-size:11px;
 
-    line-height:1.4;
+    line-height:1.45;
 
-    min-height:34px;
+    min-height:32px;
 
-    margin-bottom:10px;
+    margin-bottom:9px;
 }
 
 .downloadInfo{
-    color:#738097;
+    color:#68758b;
 
-    font-size:12px;
+    font-size:10px;
 
     margin-bottom:9px;
 }
@@ -365,7 +395,7 @@ button{
 .downloadBtn{
     width:100%;
 
-    padding:11px 8px;
+    padding:11px 5px;
 
     border:0;
 
@@ -376,7 +406,7 @@ button{
 
     color:#001018;
 
-    font-size:12px;
+    font-size:11px;
 
     font-weight:900;
 }
@@ -385,22 +415,115 @@ button{
     opacity:.6;
 }
 
-/* ================= COMMENTS ================= */
+
+/* =====================================================
+   BẢO TRÌ MOD 4 + MOD 5
+===================================================== */
+
+.maintenanceCard{
+    background:#000 !important;
+
+    border:1px solid #151515 !important;
+
+    cursor:not-allowed;
+
+    box-shadow:
+        0 0 20px rgba(0,0,0,.7);
+}
+
+.maintenanceCard:hover{
+    transform:none !important;
+
+    border-color:#151515 !important;
+}
+
+.maintenanceBox{
+    width:100%;
+
+    aspect-ratio:1/1;
+
+    background:#000;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:15px;
+
+    pointer-events:none;
+}
+
+.maintenanceIcon{
+    font-size:43px;
+
+    margin-bottom:12px;
+
+    filter:grayscale(1);
+}
+
+.maintenanceTitle{
+    color:#fff;
+
+    font-size:18px;
+
+    font-weight:900;
+
+    letter-spacing:.5px;
+}
+
+.maintenanceText{
+    color:#777;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+    margin-top:7px;
+}
+
+.maintenanceStatus{
+    color:#555;
+
+    font-size:10px;
+
+    font-weight:900;
+
+    text-align:center;
+
+    padding:9px;
+
+    background:#050505;
+
+    border-radius:9px;
+
+    border:1px solid #151515;
+}
+
+
+/* =====================================================
+   COMMENTS
+===================================================== */
 
 .comments{
     margin-top:18px;
 
-    background:#0d1422;
-
-    border:1px solid #29354c;
+    padding:18px;
 
     border-radius:18px;
 
-    padding:18px;
+    background:#0d1422;
+
+    border:1px solid #29364d;
 }
 
 .commentsTitle{
-    font-size:20px;
+    font-size:19px;
 
     font-weight:900;
 
@@ -414,7 +537,7 @@ button{
 
     gap:9px;
 
-    margin-bottom:18px;
+    margin-bottom:17px;
 }
 
 .commentInput{
@@ -424,11 +547,11 @@ button{
 
     border-radius:11px;
 
-    border:1px solid #303c54;
+    border:1px solid #303d55;
 
     background:#080d17;
 
-    color:white;
+    color:#fff;
 
     outline:none;
 }
@@ -451,12 +574,16 @@ button{
     font-weight:900;
 }
 
+.commentButton:disabled{
+    opacity:.6;
+}
+
 .commentList{
     display:flex;
 
     flex-direction:column;
 
-    gap:10px;
+    gap:9px;
 }
 
 .comment{
@@ -466,7 +593,7 @@ button{
 
     background:#111a2b;
 
-    border:1px solid #202c42;
+    border:1px solid #202d43;
 }
 
 .commentName{
@@ -474,21 +601,23 @@ button{
 
     font-weight:900;
 
+    font-size:13px;
+
     margin-bottom:5px;
 }
 
 .commentText{
-    color:#d6dcea;
+    color:#d8dfec;
+
+    font-size:13px;
 
     line-height:1.5;
-
-    font-size:14px;
 
     word-break:break-word;
 }
 
 .commentTime{
-    color:#69768d;
+    color:#68758a;
 
     font-size:10px;
 
@@ -496,35 +625,45 @@ button{
 }
 
 .empty{
-    color:#748197;
+    color:#6d7a90;
 
     text-align:center;
 
     padding:20px;
 }
 
-/* ================= FOOTER ================= */
+
+/* =====================================================
+   FOOTER
+===================================================== */
 
 .footer{
     text-align:center;
 
-    color:#59657a;
+    color:#58657a;
 
-    font-size:12px;
+    font-size:11px;
 
-    padding:25px 10px;
+    padding:25px 5px;
 }
 
-/* ================= MOBILE ================= */
+
+/* =====================================================
+   MOBILE
+===================================================== */
 
 @media(max-width:500px){
 
     .container{
-        padding:10px;
+        padding:9px;
     }
 
     .logo{
         font-size:25px;
+    }
+
+    .subtitle{
+        font-size:12px;
     }
 
     .modGrid{
@@ -535,36 +674,41 @@ button{
     }
 
     .modBody{
-        padding:10px;
+        padding:9px;
     }
 
     .modName{
-        font-size:14px;
+        font-size:13px;
     }
 
     .modDesc{
-        font-size:11px;
-    }
-
-    .downloadInfo{
         font-size:10px;
     }
 
     .downloadBtn{
-        padding:10px 5px;
+        font-size:10px;
 
+        padding:10px 3px;
+    }
+
+    .maintenanceTitle{
+        font-size:15px;
+    }
+
+    .maintenanceText{
         font-size:10px;
     }
 
 }
 
-@media(max-width:350px){
+@media(max-width:340px){
 
     .modGrid{
         grid-template-columns:1fr;
     }
 
 }
+
 </style>
 </head>
 
@@ -572,9 +716,9 @@ button{
 <body>
 
 
-<!-- ==================================================
+<!-- =====================================================
      KEY SCREEN
-================================================== -->
+===================================================== -->
 
 <div id="keyScreen">
 
@@ -585,34 +729,30 @@ button{
         </div>
 
         <div class="keyTitle">
-            🔐 NHẬP KEY ĐỂ TRUY CẬP
+            🔐 NHẬP KEY
         </div>
 
-        <div class="keyDesc">
-            Bạn phải nhập KEY hợp lệ để mở
-            kho MOD, SKIN và ADDON.
+        <div class="keyDescription">
+            Nhập KEY do Admin cung cấp để
+            truy cập kho MOD.
         </div>
 
         <input
             id="keyInput"
-            class="keyInput"
             type="text"
             placeholder="Nhập KEY..."
             autocomplete="off"
             autocapitalize="characters"
         >
 
-        <button
-            id="keyButton"
-            class="keyButton"
-        >
+        <button id="keyButton">
             🔓 XÁC NHẬN KEY
         </button>
 
         <div id="keyMessage"></div>
 
         <div class="keyNote">
-            KEY được kiểm tra trực tiếp với hệ thống.
+            KEY được giới hạn theo số lượt Admin cài đặt.
         </div>
 
     </div>
@@ -620,9 +760,10 @@ button{
 </div>
 
 
-<!-- ==================================================
+
+<!-- =====================================================
      MAIN WEBSITE
-================================================== -->
+===================================================== -->
 
 <div id="mainWebsite">
 
@@ -644,10 +785,10 @@ button{
         <div class="headerButtons">
 
             <button
-                class="smallButton"
-                onclick="logoutKey()"
+                class="logoutButton"
+                id="logoutButton"
             >
-                🔒 ĐỔI KEY
+                🔒 NHẬP KEY KHÁC
             </button>
 
         </div>
@@ -673,18 +814,16 @@ button{
 
     <div class="notice">
 
-        ⚡ <b>THÔNG BÁO</b><br>
+        ⚡ <b>C.BANGVMOD</b><br>
 
-        Chào mừng bạn đến với
-        <b>C.BANGVMOD</b>.<br>
-
-        Chọn MOD bạn muốn tải bên dưới.
-        Lượt tải được cập nhật tự động.
+        Chào mừng bạn đến với kho MOD.
+        Chọn MOD bên dưới để tải về.
+        MOD 4 và MOD 5 hiện đang bảo trì.
 
     </div>
 
 
-    <!-- MODS -->
+    <!-- MOD -->
 
     <div
         id="modGrid"
@@ -710,12 +849,14 @@ button{
                 maxlength="30"
             >
 
+
             <input
                 id="commentInput"
                 class="commentInput"
                 placeholder="💬 Viết bình luận..."
                 maxlength="500"
             >
+
 
             <button
                 id="commentButton"
@@ -742,7 +883,7 @@ button{
 
 
     <div class="footer">
-        © 2026 C.BANGVMOD — MOD • SKIN • ADDON
+        © 2026 C.BANGVMOD
     </div>
 
 
@@ -751,11 +892,13 @@ button{
 </div>
 
 
-<!-- ==================================================
-     FIREBASE
-================================================== -->
 
 <script type="module">
+
+
+/* =====================================================
+   FIREBASE
+===================================================== */
 
 import {
     initializeApp
@@ -779,10 +922,6 @@ import {
 }
 from "https://www.gstatic.com/firebasejs/12.1.0/firebase-firestore.js";
 
-
-/* ==================================================
-   FIREBASE CONFIG
-================================================== */
 
 const firebaseConfig = {
 
@@ -813,13 +952,15 @@ const firebaseConfig = {
 const app =
     initializeApp(firebaseConfig);
 
+
 const db =
     getFirestore(app);
 
 
-/* ==================================================
+
+/* =====================================================
    MOD DATA
-================================================== */
+===================================================== */
 
 const items = [
 
@@ -833,7 +974,9 @@ const items = [
         "https://drive.google.com/uc?export=download&id=1ucvTRdK80pbbICro2gMtXv4ANU7uMHUN",
 
         desc:
-        "MOD Minecraft cực đẹp."
+        "MOD Minecraft cực đẹp.",
+
+        maintenance:false
     },
 
 
@@ -847,7 +990,9 @@ const items = [
         "https://drive.google.com/uc?export=download&id=1x9mbuN-JoIlSsxXHzvxzWeNPqLkWADmp",
 
         desc:
-        "MOD Minecraft mới."
+        "MOD Minecraft mới.",
+
+        maintenance:false
     },
 
 
@@ -861,43 +1006,54 @@ const items = [
         "https://drive.google.com/uc?export=download&id=1L5H6VoZxJlRugd6HxNzSbpqD4i2Vl6Nc",
 
         desc:
-        "MOD Minecraft dành cho bạn."
+        "MOD Minecraft dành cho bạn.",
+
+        maintenance:false
     },
 
+
+    /* =================================================
+       MOD 4 - BẢO TRÌ
+    ================================================= */
 
     {
         name:"MOD 4",
 
-        image:
-        "LINK-HINH-4",
+        image:"",
 
-        file:
-        "https://drive.google.com/uc?export=download&id=1Quei8HB3pfhqsR3fBIjZgUWeyNpsKMDA",
+        file:"",
 
         desc:
-        "MOD Minecraft."
+        "MOD đang được bảo trì.",
+
+        maintenance:true
     },
 
+
+    /* =================================================
+       MOD 5 - BẢO TRÌ
+    ================================================= */
 
     {
         name:"MOD 5",
 
-        image:
-        "LINK-HINH-5",
+        image:"",
 
-        file:
-        "LINK-FILE-5",
+        file:"",
 
         desc:
-        "MOD đang cập nhật."
+        "MOD đang được bảo trì.",
+
+        maintenance:true
     }
 
 ];
 
 
-/* ==================================================
+
+/* =====================================================
    DEVICE ID
-================================================== */
+===================================================== */
 
 let deviceID =
     localStorage.getItem(
@@ -924,6 +1080,7 @@ if(!deviceID){
 
     }
 
+
     localStorage.setItem(
         "cbangvmode_device_id",
         deviceID
@@ -932,110 +1089,99 @@ if(!deviceID){
 }
 
 
-/* ==================================================
+
+/* =====================================================
    DOM
-================================================== */
+===================================================== */
 
 const keyScreen =
-    document.getElementById("keyScreen");
+    document.getElementById(
+        "keyScreen"
+    );
+
 
 const mainWebsite =
-    document.getElementById("mainWebsite");
+    document.getElementById(
+        "mainWebsite"
+    );
+
 
 const keyInput =
-    document.getElementById("keyInput");
+    document.getElementById(
+        "keyInput"
+    );
+
 
 const keyButton =
-    document.getElementById("keyButton");
+    document.getElementById(
+        "keyButton"
+    );
+
 
 const keyMessage =
-    document.getElementById("keyMessage");
+    document.getElementById(
+        "keyMessage"
+    );
 
 
-/* ==================================================
+
+/* =====================================================
    ESCAPE HTML
-================================================== */
+===================================================== */
 
 function escapeHTML(text){
 
     return String(text ?? "")
+
         .replace(/&/g,"&amp;")
+
         .replace(/</g,"&lt;")
+
         .replace(/>/g,"&gt;")
+
         .replace(/"/g,"&quot;")
+
         .replace(/'/g,"&#039;");
 
 }
 
 
-/* ==================================================
+
+/* =====================================================
    SHOW KEY
-================================================== */
+===================================================== */
 
 function showKeyScreen(){
 
-    keyScreen.style.display = "flex";
+    keyScreen.style.display =
+        "flex";
 
-    mainWebsite.style.display = "none";
+    mainWebsite.style.display =
+        "none";
 
 }
 
 
-/* ==================================================
+
+/* =====================================================
    SHOW WEBSITE
-================================================== */
+===================================================== */
 
 function showWebsite(){
 
-    keyScreen.style.display = "none";
+    keyScreen.style.display =
+        "none";
 
-    mainWebsite.style.display = "block";
-
-}
-
-
-/* ==================================================
-   CLEAR KEY
-================================================== */
-
-function clearSavedKey(){
-
-    localStorage.removeItem(
-        "cbangvmode_key"
-    );
-
-    localStorage.removeItem(
-        "cbangvmode_key_doc"
-    );
+    mainWebsite.style.display =
+        "block";
 
 }
 
 
-/* ==================================================
-   LOGOUT / ĐỔI KEY
-================================================== */
 
-window.logoutKey = function(){
-
-    clearSavedKey();
-
-    showKeyScreen();
-
-    keyInput.value = "";
-
-    keyMessage.textContent = "";
-
-    window.scrollTo({
-        top:0,
-        behavior:"smooth"
-    });
-
-};
-
-
-/* ==================================================
+/* =====================================================
    VERIFY KEY
-================================================== */
+===================================================== */
 
 async function verifyKey(){
 
@@ -1058,10 +1204,12 @@ async function verifyKey(){
     }
 
 
-    keyButton.disabled = true;
+    keyButton.disabled =
+        true;
 
     keyButton.textContent =
         "⏳ ĐANG KIỂM TRA...";
+
 
     keyMessage.style.color =
         "#00eaff";
@@ -1072,7 +1220,12 @@ async function verifyKey(){
 
     try{
 
-        const q =
+
+        /* =============================================
+           TÌM KEY
+        ============================================= */
+
+        const keyQuery =
             query(
                 collection(
                     db,
@@ -1087,7 +1240,9 @@ async function verifyKey(){
 
 
         const result =
-            await getDocs(q);
+            await getDocs(
+                keyQuery
+            );
 
 
         if(result.empty){
@@ -1099,7 +1254,7 @@ async function verifyKey(){
         }
 
 
-        const keyDoc =
+        const keyDocument =
             result.docs[0];
 
 
@@ -1107,156 +1262,126 @@ async function verifyKey(){
             doc(
                 db,
                 "website_keys",
-                keyDoc.id
+                keyDocument.id
             );
 
 
-        const resultTransaction =
-            await runTransaction(
-                db,
-                async(transaction)=>{
+        /* =============================================
+           TRANSACTION
+        ============================================= */
 
-                    const snap =
-                        await transaction.get(
-                            keyRef
-                        );
+        await runTransaction(
+            db,
+            async(transaction)=>{
 
 
-                    if(!snap.exists()){
-
-                        throw new Error(
-                            "INVALID"
-                        );
-
-                    }
-
-
-                    const data =
-                        snap.data();
-
-
-                    if(
-                        data.active === false
-                    ){
-
-                        throw new Error(
-                            "INACTIVE"
-                        );
-
-                    }
-
-
-                    const maxUses =
-                        Number(
-                            data.maxUses || 1
-                        );
-
-
-                    const usedCount =
-                        Number(
-                            data.usedCount || 0
-                        );
-
-
-                    const deviceIds =
-                        Array.isArray(
-                            data.deviceIds
-                        )
-                        ? data.deviceIds
-                        : [];
-
-
-                    /*
-                       THIẾT BỊ NÀY ĐÃ DÙNG KEY
-                       => CHO VÀO LẠI
-                       => KHÔNG TRỪ LƯỢT
-                    */
-
-                    if(
-                        deviceIds.includes(
-                            deviceID
-                        )
-                    ){
-
-                        return {
-                            success:true,
-                            sameDevice:true
-                        };
-
-                    }
-
-
-                    /*
-                       KIỂM TRA HẾT LƯỢT
-                    */
-
-                    if(
-                        maxUses < 999999 &&
-                        usedCount >= maxUses
-                    ){
-
-                        throw new Error(
-                            "FULL"
-                        );
-
-                    }
-
-
-                    /*
-                       THIẾT BỊ MỚI
-                       => TĂNG LƯỢT DÙNG
-                    */
-
-                    transaction.update(
-                        keyRef,
-                        {
-
-                            usedCount:
-                                usedCount + 1,
-
-                            deviceIds:
-                                [
-                                    ...deviceIds,
-                                    deviceID
-                                ]
-
-                        }
+                const snap =
+                    await transaction.get(
+                        keyRef
                     );
 
 
-                    return {
-                        success:true,
-                        sameDevice:false
-                    };
+                if(!snap.exists()){
+
+                    throw new Error(
+                        "INVALID"
+                    );
 
                 }
-            );
 
 
-        localStorage.setItem(
+                const data =
+                    snap.data();
+
+
+                /* KEY BỊ KHÓA */
+
+                if(
+                    data.active === false
+                ){
+
+                    throw new Error(
+                        "INACTIVE"
+                    );
+
+                }
+
+
+                const maxUses =
+                    Number(
+                        data.maxUses || 1
+                    );
+
+
+                const usedCount =
+                    Number(
+                        data.usedCount || 0
+                    );
+
+
+                /* KEY HẾT LƯỢT */
+
+                if(
+                    maxUses < 999999 &&
+                    usedCount >= maxUses
+                ){
+
+                    throw new Error(
+                        "FULL"
+                    );
+
+                }
+
+
+                /* TĂNG LƯỢT */
+
+                transaction.update(
+                    keyRef,
+                    {
+
+                        usedCount:
+                            usedCount + 1
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =============================================
+           KEY HỢP LỆ
+        ============================================= */
+
+        sessionStorage.setItem(
             "cbangvmode_key",
             key
         );
 
 
-        localStorage.setItem(
+        sessionStorage.setItem(
             "cbangvmode_key_doc",
-            keyDoc.id
+            keyDocument.id
         );
 
 
         keyMessage.style.color =
             "#00e676";
 
+
         keyMessage.textContent =
-            resultTransaction.sameDevice
-            ? "✅ KEY hợp lệ!"
-            : "✅ Xác nhận KEY thành công!";
+            "✅ KEY HỢP LỆ! Đang vào website...";
 
 
         setTimeout(
             ()=>{
+
                 showWebsite();
+
+                watchCurrentKey(
+                    keyDocument.id
+                );
+
             },
             500
         );
@@ -1264,7 +1389,10 @@ async function verifyKey(){
 
     }catch(error){
 
-        console.error(error);
+        console.error(
+            "KEY ERROR:",
+            error
+        );
 
 
         keyMessage.style.color =
@@ -1278,21 +1406,27 @@ async function verifyKey(){
             keyMessage.textContent =
                 "❌ KEY đã hết lượt sử dụng!";
 
-        }else if(
+        }
+
+        else if(
             error.message === "INACTIVE"
         ){
 
             keyMessage.textContent =
-                "❌ KEY đã bị khóa!";
+                "❌ KEY đã bị Admin khóa!";
 
-        }else if(
+        }
+
+        else if(
             error.message === "INVALID"
         ){
 
             keyMessage.textContent =
-                "❌ KEY không tồn tại hoặc không hợp lệ!";
+                "❌ KEY không đúng!";
 
-        }else{
+        }
+
+        else{
 
             keyMessage.textContent =
                 "❌ Không thể kiểm tra KEY. Hãy kiểm tra mạng!";
@@ -1302,7 +1436,8 @@ async function verifyKey(){
     }
 
 
-    keyButton.disabled = false;
+    keyButton.disabled =
+        false;
 
     keyButton.textContent =
         "🔓 XÁC NHẬN KEY";
@@ -1310,9 +1445,10 @@ async function verifyKey(){
 }
 
 
-/* ==================================================
-   BUTTON KEY
-================================================== */
+
+/* =====================================================
+   KEY BUTTON
+===================================================== */
 
 keyButton.addEventListener(
     "click",
@@ -1320,15 +1456,18 @@ keyButton.addEventListener(
 );
 
 
-/* ==================================================
+
+/* =====================================================
    ENTER KEY
-================================================== */
+===================================================== */
 
 keyInput.addEventListener(
     "keydown",
-    (event)=>{
+    event=>{
 
-        if(event.key === "Enter"){
+        if(
+            event.key === "Enter"
+        ){
 
             verifyKey();
 
@@ -1338,28 +1477,67 @@ keyInput.addEventListener(
 );
 
 
-/* ==================================================
-   CHECK SAVED KEY
-================================================== */
 
-async function checkSavedKey(){
+/* =====================================================
+   LOGOUT / ĐỔI KEY
+===================================================== */
+
+document
+.getElementById(
+    "logoutButton"
+)
+.addEventListener(
+    "click",
+    ()=>{
+
+        sessionStorage.removeItem(
+            "cbangvmode_key"
+        );
+
+
+        sessionStorage.removeItem(
+            "cbangvmode_key_doc"
+        );
+
+
+        keyInput.value =
+            "";
+
+
+        keyMessage.textContent =
+            "";
+
+
+        showKeyScreen();
+
+
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
+
+    }
+);
+
+
+
+/* =====================================================
+   CHECK SESSION KEY
+===================================================== */
+
+async function checkCurrentKey(){
 
     const savedKey =
-        localStorage.getItem(
+        sessionStorage.getItem(
             "cbangvmode_key"
         );
 
 
     const savedDoc =
-        localStorage.getItem(
+        sessionStorage.getItem(
             "cbangvmode_key_doc"
         );
 
-
-    /*
-       KHÔNG CÓ KEY
-       => CHẮC CHẮN CHẶN TRANG
-    */
 
     if(
         !savedKey ||
@@ -1389,7 +1567,13 @@ async function checkSavedKey(){
 
         if(!snap.exists()){
 
-            clearSavedKey();
+            sessionStorage.removeItem(
+                "cbangvmode_key"
+            );
+
+            sessionStorage.removeItem(
+                "cbangvmode_key_doc"
+            );
 
             showKeyScreen();
 
@@ -1402,78 +1586,64 @@ async function checkSavedKey(){
             snap.data();
 
 
-        const deviceIds =
-            Array.isArray(
-                data.deviceIds
-            )
-            ? data.deviceIds
-            : [];
-
-
-        /*
-           KEY BỊ ADMIN XÓA / KHÓA
-        */
-
         if(
-            data.active === false ||
-            !deviceIds.includes(deviceID)
+            data.active === false
         ){
 
-            clearSavedKey();
+            sessionStorage.removeItem(
+                "cbangvmode_key"
+            );
+
+            sessionStorage.removeItem(
+                "cbangvmode_key_doc"
+            );
 
             showKeyScreen();
+
 
             keyMessage.style.color =
                 "#ff5269";
 
+
             keyMessage.textContent =
-                "🔒 KEY đã bị xóa hoặc không còn hợp lệ!";
+                "🔒 KEY đã bị Admin khóa!";
+
 
             return;
 
         }
 
 
-        /*
-           KEY HỢP LỆ
-        */
-
         showWebsite();
 
 
-        watchCurrentKey(savedDoc);
+        watchCurrentKey(
+            savedDoc
+        );
 
 
     }catch(error){
 
         console.error(error);
 
-        /*
-           Khi Firebase lỗi mạng:
-           KHÔNG tự cho qua KEY.
-        */
-
         showKeyScreen();
-
-        keyMessage.style.color =
-            "#ff5269";
-
-        keyMessage.textContent =
-            "⚠️ Không thể xác minh KEY. Hãy kiểm tra mạng!";
 
     }
 
 }
 
 
-/* ==================================================
+
+/* =====================================================
    WATCH KEY REALTIME
-================================================== */
+===================================================== */
 
 let stopKeyWatch = null;
 
 
-function watchCurrentKey(keyDocID){
+function watchCurrentKey(
+    keyDocID
+){
 
     if(stopKeyWatch){
 
@@ -1493,19 +1663,36 @@ function watchCurrentKey(keyDocID){
     stopKeyWatch =
         onSnapshot(
             ref,
-            (snap)=>{
 
-                if(!snap.exists()){
+            snap=>{
 
-                    clearSavedKey();
+
+                /* KEY BỊ XÓA */
+
+                if(
+                    !snap.exists()
+                ){
+
+                    sessionStorage.removeItem(
+                        "cbangvmode_key"
+                    );
+
+
+                    sessionStorage.removeItem(
+                        "cbangvmode_key_doc"
+                    );
+
 
                     showKeyScreen();
+
 
                     keyMessage.style.color =
                         "#ff5269";
 
+
                     keyMessage.textContent =
                         "🔒 KEY ĐÃ BỊ ADMIN XÓA!";
+
 
                     return;
 
@@ -1516,49 +1703,45 @@ function watchCurrentKey(keyDocID){
                     snap.data();
 
 
-                const deviceIds =
-                    Array.isArray(
-                        data.deviceIds
-                    )
-                    ? data.deviceIds
-                    : [];
-
+                /* KEY BỊ KHÓA */
 
                 if(
-                    data.active === false ||
-                    !deviceIds.includes(deviceID)
+                    data.active === false
                 ){
 
-                    clearSavedKey();
+                    sessionStorage.removeItem(
+                        "cbangvmode_key"
+                    );
+
+
+                    sessionStorage.removeItem(
+                        "cbangvmode_key_doc"
+                    );
+
 
                     showKeyScreen();
+
 
                     keyMessage.style.color =
                         "#ff5269";
 
+
                     keyMessage.textContent =
-                        "🔒 KEY KHÔNG CÒN HỢP LỆ!";
+                        "🔒 KEY ĐÃ BỊ ADMIN KHÓA!";
 
                 }
 
-            },
-
-            (error)=>{
-
-                console.error(
-                    "Key watch error:",
-                    error
-                );
-
             }
+
         );
 
 }
 
 
-/* ==================================================
-   MOD HTML
-================================================== */
+
+/* =====================================================
+   RENDER MOD
+===================================================== */
 
 const modGrid =
     document.getElementById(
@@ -1571,16 +1754,14 @@ function renderMods(list){
     if(!list.length){
 
         modGrid.innerHTML = `
+
             <div
-                style="
-                    grid-column:1/-1;
-                    text-align:center;
-                    padding:35px;
-                    color:#748197;
-                "
+                class="empty"
+                style="grid-column:1/-1"
             >
                 🔎 Không tìm thấy MOD.
             </div>
+
         `;
 
         return;
@@ -1589,26 +1770,45 @@ function renderMods(list){
 
 
     modGrid.innerHTML =
-        list.map(
+        list
+        .map(
             item=>{
+
 
                 const index =
                     items.indexOf(item);
 
 
-                return `
+                /* =====================================
+                   MOD BẢO TRÌ
+                ===================================== */
 
-                    <article class="modCard">
+                if(item.maintenance){
 
-                        <img
-                            class="modImage"
-                            src="${escapeHTML(item.image)}"
-                            alt="${escapeHTML(item.name)}"
-                            loading="lazy"
-                            onerror="
-                                this.style.display='none'
-                            "
-                        >
+                    return `
+
+                    <article
+                        class="modCard maintenanceCard"
+                    >
+
+                        <div class="maintenanceBox">
+
+                            <div class="maintenanceIcon">
+                                🛠️
+                            </div>
+
+
+                            <div class="maintenanceTitle">
+                                ĐANG BẢO TRÌ
+                            </div>
+
+
+                            <div class="maintenanceText">
+                                VUI LÒNG ĐỢI
+                            </div>
+
+                        </div>
+
 
                         <div class="modBody">
 
@@ -1616,29 +1816,79 @@ function renderMods(list){
                                 ${escapeHTML(item.name)}
                             </div>
 
+
                             <div class="modDesc">
                                 ${escapeHTML(item.desc)}
                             </div>
 
-                            <div class="downloadInfo">
 
-                                ⬇️ Đã tải:
-                                <b id="download-${index}">
-                                    0
-                                </b>
-
+                            <div class="maintenanceStatus">
+                                ⚫ TẠM THỜI KHÔNG THỂ TẢI
                             </div>
-
-                            <button
-                                class="downloadBtn"
-                                onclick="downloadMod(${index},this)"
-                            >
-                                ⬇️ TẢI MOD
-                            </button>
 
                         </div>
 
                     </article>
+
+                    `;
+
+                }
+
+
+                /* =====================================
+                   MOD BÌNH THƯỜNG
+                ===================================== */
+
+                return `
+
+                <article class="modCard">
+
+                    <img
+                        class="modImage"
+                        src="${escapeHTML(item.image)}"
+                        alt="${escapeHTML(item.name)}"
+                        loading="lazy"
+                    >
+
+
+                    <div class="modBody">
+
+                        <div class="modName">
+                            ${escapeHTML(item.name)}
+                        </div>
+
+
+                        <div class="modDesc">
+                            ${escapeHTML(item.desc)}
+                        </div>
+
+
+                        <div class="downloadInfo">
+
+                            ⬇️ Đã tải:
+
+                            <b id="download-${index}">
+                                0
+                            </b>
+
+                        </div>
+
+
+                        <button
+                            class="downloadBtn"
+                            onclick="
+                                downloadMod(
+                                    ${index},
+                                    this
+                                )
+                            "
+                        >
+                            ⬇️ TẢI MOD
+                        </button>
+
+                    </div>
+
+                </article>
 
                 `;
 
@@ -1646,18 +1896,29 @@ function renderMods(list){
         )
         .join("");
 
+
+    loadDownloadCounts();
+
 }
 
+
+
+/* =====================================================
+   INITIAL MOD RENDER
+===================================================== */
 
 renderMods(items);
 
 
-/* ==================================================
+
+/* =====================================================
    SEARCH
-================================================== */
+===================================================== */
 
 document
-.getElementById("searchInput")
+.getElementById(
+    "searchInput"
+)
 .addEventListener(
     "input",
     function(){
@@ -1670,36 +1931,42 @@ document
 
         const filtered =
             items.filter(
-                item=>
-                    item.name
-                        .toLowerCase()
-                        .includes(keyword)
-                    ||
-                    item.desc
-                        .toLowerCase()
-                        .includes(keyword)
+                item=>{
+
+                    return (
+
+                        item.name
+                            .toLowerCase()
+                            .includes(keyword)
+
+                        ||
+
+                        item.desc
+                            .toLowerCase()
+                            .includes(keyword)
+
+                    );
+
+                }
             );
 
 
-        renderMods(filtered);
-
-
-        /*
-           Sau khi render lại,
-           cập nhật lại số lượt tải.
-        */
-
-        loadDownloadCounts();
+        renderMods(
+            filtered
+        );
 
     }
 );
 
 
-/* ==================================================
-   DOWNLOAD COUNTER
-================================================== */
 
-async function increaseDownload(index){
+/* =====================================================
+   INCREASE DOWNLOAD
+===================================================== */
+
+async function increaseDownload(
+    index
+){
 
     const ref =
         doc(
@@ -1721,7 +1988,9 @@ async function increaseDownload(index){
                     );
 
 
-                if(!snap.exists()){
+                if(
+                    !snap.exists()
+                ){
 
                     transaction.set(
                         ref,
@@ -1730,23 +1999,26 @@ async function increaseDownload(index){
                         }
                     );
 
-                }else{
-
-                    const oldCount =
-                        Number(
-                            snap.data().count || 0
-                        );
-
-
-                    transaction.update(
-                        ref,
-                        {
-                            count:
-                                oldCount + 1
-                        }
-                    );
+                    return;
 
                 }
+
+
+                const count =
+                    Number(
+                        snap.data().count || 0
+                    );
+
+
+                transaction.update(
+                    ref,
+                    {
+
+                        count:
+                            count + 1
+
+                    }
+                );
 
             }
         );
@@ -1754,7 +2026,7 @@ async function increaseDownload(index){
     }catch(error){
 
         console.error(
-            "Download counter:",
+            "DOWNLOAD COUNT:",
             error
         );
 
@@ -1763,21 +2035,40 @@ async function increaseDownload(index){
 }
 
 
-/* ==================================================
-   DOWNLOAD
-================================================== */
+
+/* =====================================================
+   DOWNLOAD MOD
+===================================================== */
 
 window.downloadMod =
-async function(index,button){
+async function(
+    index,
+    button
+){
 
     const item =
         items[index];
 
 
+    /*
+     * KHÔNG CHO MOD BẢO TRÌ TẢI
+     */
+
     if(
         !item ||
+        item.maintenance
+    ){
+
+        return;
+
+    }
+
+
+    if(
         !item.file ||
-        item.file.includes("LINK-FILE")
+        item.file.includes(
+            "LINK-FILE"
+        )
     ){
 
         alert(
@@ -1793,18 +2084,22 @@ async function(index,button){
         button.innerHTML;
 
 
-    button.disabled = true;
+    button.disabled =
+        true;
+
 
     button.innerHTML =
         "⏳ ĐANG MỞ FILE...";
 
 
-    await increaseDownload(index);
+    await increaseDownload(
+        index
+    );
 
 
     /*
-       MỞ THẲNG LINK FILE
-    */
+     * MỞ THẲNG FILE
+     */
 
     window.location.href =
         item.file;
@@ -1812,10 +2107,13 @@ async function(index,button){
 
     setTimeout(
         ()=>{
-            button.disabled = false;
+
+            button.disabled =
+                false;
 
             button.innerHTML =
                 oldText;
+
         },
         3000
     );
@@ -1823,9 +2121,14 @@ async function(index,button){
 };
 
 
-/* ==================================================
-   DOWNLOAD REALTIME
-================================================== */
+
+/* =====================================================
+   DOWNLOAD COUNTS REALTIME
+===================================================== */
+
+const downloadListeners =
+    {};
+
 
 function loadDownloadCounts(){
 
@@ -1835,6 +2138,28 @@ function loadDownloadCounts(){
         i++
     ){
 
+        /*
+         * MOD BẢO TRÌ KHÔNG CẦN LƯỢT TẢI
+         */
+
+        if(
+            items[i].maintenance
+        ){
+
+            continue;
+
+        }
+
+
+        if(
+            downloadListeners[i]
+        ){
+
+            continue;
+
+        }
+
+
         const ref =
             doc(
                 db,
@@ -1843,36 +2168,41 @@ function loadDownloadCounts(){
             );
 
 
-        onSnapshot(
-            ref,
-            (snap)=>{
+        downloadListeners[i] =
+            onSnapshot(
+                ref,
 
-                const element =
-                    document.getElementById(
-                        "download-" + i
-                    );
+                snap=>{
 
-
-                if(!element)
-                    return;
-
-
-                if(snap.exists()){
-
-                    element.textContent =
-                        Number(
-                            snap.data().count || 0
+                    const element =
+                        document.getElementById(
+                            "download-" + i
                         );
 
-                }else{
 
-                    element.textContent =
-                        "0";
+                    if(!element)
+                        return;
+
+
+                    if(
+                        snap.exists()
+                    ){
+
+                        element.textContent =
+                            Number(
+                                snap.data().count || 0
+                            );
+
+                    }else{
+
+                        element.textContent =
+                            "0";
+
+                    }
 
                 }
 
-            }
-        );
+            );
 
     }
 
@@ -1882,24 +2212,28 @@ function loadDownloadCounts(){
 loadDownloadCounts();
 
 
-/* ==================================================
+
+/* =====================================================
    COMMENTS
-================================================== */
+===================================================== */
 
 const nameInput =
     document.getElementById(
         "nameInput"
     );
 
+
 const commentInput =
     document.getElementById(
         "commentInput"
     );
 
+
 const commentButton =
     document.getElementById(
         "commentButton"
     );
+
 
 const commentList =
     document.getElementById(
@@ -1907,9 +2241,10 @@ const commentList =
     );
 
 
-/* ==================================================
+
+/* =====================================================
    SEND COMMENT
-================================================== */
+===================================================== */
 
 commentButton.addEventListener(
     "click",
@@ -1917,6 +2252,7 @@ commentButton.addEventListener(
 
         const name =
             nameInput.value.trim();
+
 
         const comment =
             commentInput.value.trim();
@@ -1951,6 +2287,7 @@ commentButton.addEventListener(
         commentButton.disabled =
             true;
 
+
         commentButton.textContent =
             "⏳ ĐANG GỬI...";
 
@@ -1968,8 +2305,6 @@ commentButton.addEventListener(
 
                     comment:comment,
 
-                    deviceId:deviceID,
-
                     createdAt:
                         serverTimestamp()
 
@@ -1977,16 +2312,17 @@ commentButton.addEventListener(
             );
 
 
-            commentInput.value = "";
+            commentInput.value =
+                "";
 
 
         }catch(error){
 
             console.error(error);
 
+
             alert(
-                "❌ Không thể gửi bình luận!\n\n" +
-                error.message
+                "❌ Không thể gửi bình luận!"
             );
 
         }
@@ -1995,6 +2331,7 @@ commentButton.addEventListener(
         commentButton.disabled =
             false;
 
+
         commentButton.textContent =
             "📤 GỬI BÌNH LUẬN";
 
@@ -2002,9 +2339,10 @@ commentButton.addEventListener(
 );
 
 
-/* ==================================================
+
+/* =====================================================
    COMMENTS REALTIME
-================================================== */
+===================================================== */
 
 const commentsQuery =
     query(
@@ -2021,15 +2359,20 @@ const commentsQuery =
 
 onSnapshot(
     commentsQuery,
-    (snapshot)=>{
 
-        if(snapshot.empty){
+    snapshot=>{
+
+
+        if(
+            snapshot.empty
+        ){
 
             commentList.innerHTML = `
+
                 <div class="empty">
                     💬 Chưa có bình luận nào.
-                    Hãy là người đầu tiên!
                 </div>
+
             `;
 
             return;
@@ -2041,14 +2384,13 @@ onSnapshot(
 
 
         snapshot.forEach(
-            docSnap=>{
+            commentDoc=>{
 
                 const data =
-                    docSnap.data();
+                    commentDoc.data();
 
 
-                let time =
-                    "";
+                let time = "";
 
 
                 if(
@@ -2077,18 +2419,22 @@ onSnapshot(
                             )}
                         </div>
 
+
                         <div class="commentText">
                             ${escapeHTML(
                                 data.comment
                             )}
                         </div>
 
+
                         ${
                             time
                             ?
                             `
                             <div class="commentTime">
-                                ${escapeHTML(time)}
+                                ${escapeHTML(
+                                    time
+                                )}
                             </div>
                             `
                             :
@@ -2108,31 +2454,36 @@ onSnapshot(
 
     },
 
-    (error)=>{
+    error=>{
 
         console.error(
-            "Comments:",
+            "COMMENT ERROR:",
             error
         );
 
 
         commentList.innerHTML = `
+
             <div class="empty">
                 ❌ Không thể tải bình luận.
             </div>
+
         `;
 
     }
+
 );
 
 
-/* ==================================================
+
+/* =====================================================
    START
-================================================== */
+===================================================== */
 
 showKeyScreen();
 
-checkSavedKey();
+checkCurrentKey();
+
 
 </script>
 
